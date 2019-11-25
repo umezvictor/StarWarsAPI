@@ -1,5 +1,6 @@
 Introduction
-Welcome to the Star Wars API. This documentation is intended to help developers learn how to use the resources provided by this API. It shows you how to consume the resources using http requests. All requests are made or returned in JSON format. 
+
+This documentation is intended to help developers learn how to use the resources provided by this API. It shows you how to consume the resources using http requests. All requests are made or returned in JSON format. 
 Please read carefully.
 
 Root URL
@@ -54,5 +55,5 @@ HTTP Response codes
 400 --- Returned when a request url syntax is malformed, has wrong parameters or if the request body format is invalid
 404 --- Returned when requested resource is not found
 
-
+Note: This api uses PostreSQL database 
 To read the full documentation, visit https://starwarsapitest.herokuapp.com
