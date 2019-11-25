@@ -1,3 +1,5 @@
+'use strict';
+
 // This file contains all api methods
 const express = require('express');
 const axios = require('axios');
@@ -18,6 +20,7 @@ const client = new Client({
     host: connection.HOST,
     ssl: connection.SSL
   })
+
 
   client.connect()
   

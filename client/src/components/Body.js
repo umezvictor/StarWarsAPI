@@ -8,29 +8,36 @@ import React from 'react'
                     <br />
                     <h3 className="text-success">Documentation</h3>
                     <hr />
-                    <h4>Introduction</h4>
+                    <h3>Introduction</h3>
                     <p>
                         Welcome to the Star Wars API. This documentation is intended to help developers learn how to use the resources 
                         provided by this API. It shows you how to consume the resources using http requests. All requests are made or returned in JSON format.
-                        Please read carefully. Enjoy.
+                        Please read carefully.
                     </p>
 
-                    <h4>Getting Started</h4>
+                    <h6>Getting Started</h6>
                     <p>
                         Let's try making our first API request. Using Postman or any other HTTP client of your choice, 
-                        make a GET request to https://localhost:5000/get-character. <br />
+                        make a GET request to http://starwarsapitest.herokuapp.com/api/list-all-comments <br />
                         Below is the response gotten
                     </p>
+                    <div className="bg-light">
+                        <pre><code>
+                            {'{'}<br />
+                            "id": 1,<br />
+                                "ipaddress": "154.113.98.190",<br />
+                                "created_at": "Sun, 24 Nov 2019",<br />
+                                "substring": "I love this great movie"<br />
+                            {'}'}
+                        </code></pre>
+                    </div>
 
-                    <pre><code>
-                        
-                    </code></pre>
 
-                    <h4>Root URL</h4>
-                    <p>The root URL for this API is localhost:5000/api/</p>
+                    <h6>Root URL</h6>
+                    <p>The root URL for this API is http://starwarsapitest.herokuapp.com/api/</p>
 
-                    <h4>Authentication</h4>
-                    <p>No authentication is required to use this API. It is a completely open API. So, enjoy.</p>
+                    <h6>Authentication</h6>
+                    <p>No authentication is required to use this API. It is a completely open API. So, feel free to use to it.</p>
 
                     <hr />
 
@@ -40,15 +47,15 @@ import React from 'react'
                     <h4>Movies</h4>
                     <p>This is a list of all Star Wars Movies</p>
 
-                    <h5>Endpoint</h5>
-                    <p>/api/list-all-movies/  --- returns all Star Wars in chronological order of their release dates <br />
+                    <h6>Endpoint</h6>
+                    <p>/list-all-movies/  --- returns all Star Wars in chronological order of their release dates <br />
                     Request Type: GET </p>
 
 
-                    <h4>Sample request</h4>
-                    <p>localhost:5000/api/list-all-movies/</p>
+                    <h6>Sample request</h6>
+                    <p>http://starwarsapitest.herokuapp.com/api/list-all-movies/</p>
 
-                    <h4>Sample response</h4>
+                    <h6>Sample response</h6>
                     <div className="bg-light">
                         <pre><code>
                         {'{'}<br />
@@ -96,7 +103,7 @@ import React from 'react'
                     </div>
                    
 
-                    <h5>Attributes</h5>
+                    <h6>Attributes</h6>
                     <ul>
                         <li><code>title</code> <em>string</em>
                         -- The title of this film</li>
@@ -137,24 +144,24 @@ import React from 'react'
                     <h4>Comments</h4>
                     <p>These are comments by anonymous people. The request must be made in JSON format</p>
 
-                    <h5>Endpoints</h5>
+                    <h6>Endpoints</h6>
                     
                     <ul>
                         <li>/add-comments/ --- Adds a new comment (POST request) </li>
                         <li>/list-all-comments/ --- lists all comments in reverse chronological order (GET requets)</li>
                     </ul>
                     
-                    <h4>Sample request</h4>
-                    <p>localhost:5000/api/list-all-comments</p>
+                    <h6>Sample request</h6>
+                    <p>http://starwarsapitest.herokuapp.com/api/list-all-comments</p>
 
-                    <h4>Sample response</h4>
+                    <h6>Sample response</h6>
                     <div className="bg-light">
                         <pre><code>
                         {'{'}<br />
-                            "id": 3, <br />                                                                                                                                                                                                                                               ",
-                            "ipaddress": "::1",<br />
-                            "created_at": "1574335392705",<br />
-                            "substring": "I love this great movie"<br />
+                        "id": 1,<br />
+                                "ipaddress": "154.113.98.190",<br />
+                                "created_at": "Sun, 24 Nov 2019",<br />
+                                "substring": "I love this great movie"<br />
                          {'}'}
                         </code></pre>
                       
@@ -162,14 +169,14 @@ import React from 'react'
                    
                         
 
-                    <h5>Attributes</h5>
+                    <h6>Attributes</h6>
                     <ul>
                         <li><code>id</code> <em>Integer</em>
                         -- The id of the commenter</li>
                         <li><code>ipaddress</code> <em>String</em>
                         -- IP address of the commenter</li>
                         <li><code>created_at</code> <em>string</em>
-                        -- date the comment was create in UTC format</li>
+                        -- date the comment was created in UTC format</li>
                         <li><code>substring</code> <em>string</em>
                         -- an extract from the comment added by the commenter, limited to 500 characters</li> 
                        
@@ -185,22 +192,22 @@ import React from 'react'
                     Request Type: GET </p>
                    
 
-                    <h5>Endpoint</h5>
-                    <p>localhost:5000/api/get-characters/ <br />
+                    <h6>Endpoint</h6>
+                    <p>/get-characters/ <br />
                     This endpoint accepts two types of parameters:</p>
                     
                     <p>Sort parameter -- sorts by height. Returns all characters in ascending order of their geight. <br />
-                    Example: localhost:5000/api/get-characters/?search=male  -- returns all male characters</p>
+                    Example: http://starwarsapitest.herokuapp.com/api/get-characters/?search=male  -- returns all male characters</p>
                     <p>Filter parameter -- filters by gender. <br />
-                    Example: localhost:5000/api/get-characters/?height=165  -- returns all charcters in ascending order of their heights</p>
+                    Example: http://starwarsapitest.herokuapp.com/api/get-characters/?height=165  -- returns all charcters in ascending order of their heights</p>
                     
                     
                     
-                    <h4>Sample Request</h4>
-                    <p>localhost:5000/api/get-characters/?search=female</p>
+                    <h6>Sample Request</h6>
+                    <p>http://starwarsapitest.herokuapp.com/api/get-characters/?search=female</p>
                     
 
-                    <h4>Sample response</h4>
+                    <h6>Sample response</h6>
                     <div className="bg-light">
                         <pre><code>
                             {'{'}<br />
@@ -252,7 +259,7 @@ import React from 'react'
                         </code></pre>
                     </div>
                    
-                <h5>Attributes</h5>
+                <h6>Attributes</h6>
                     <ul>
                     <li><code>name</code> <em>string</em>
                     -- The name of this person.</li>
@@ -311,7 +318,7 @@ import React from 'react'
                     <br />
                     <br />
                             
-                    <p className="text-center">Created with <span style={{color: 'red'}}><i class="fa fa-heart" aria-hidden="true"></i></span> by Victor Umezuruike</p>
+                    <p className="text-center">Created with <span style={{color: 'red'}}><i className="fa fa-heart" aria-hidden="true"></i></span> by Victor Umezuruike</p>
                 </div>
             </div>
         </div>

@@ -12,6 +12,7 @@
         "no-shadow":"off",
         "no-plusplus":"off",
         "global-require":"off",
-        "consistent-return": "off"
+        "consistent-return": "off",
+        "strict":"off"
     }
 }
