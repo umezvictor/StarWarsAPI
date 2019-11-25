@@ -2,9 +2,11 @@ This documentation is intended to help developers learn how to use the resources
 Please read carefully.
 
 Root URL
+
 The root URL for this API is http://starwarsapitest.herokuapp.com/api/
 
 Authentication
+
 No authentication is required to use this API. It is a completely open API. So, feel free to use to it.
 
 Resources
@@ -17,6 +19,7 @@ Endpoint:     /list-all-movies/ --- returns all Star Wars in chronological order
 Request Type: GET
 
 Sample request
+
 http://starwarsapitest.herokuapp.com/api/list-all-movies/
 
 
