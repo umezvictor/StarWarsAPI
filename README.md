@@ -46,10 +46,12 @@ Endpoint:   /get-characters/    -- returns the movie characters based on the sup
 
 This endpoint accepts two types of parameters:
 
-Sort parameter -- sorts by height. Returns all characters in ascending order of their geight.
+Sort parameter -- sorts by height.  Returns all characters in ascending order of their height.
+
 Example: http://starwarsapitest.herokuapp.com/api/get-characters/?search=male -- returns all male characters
 
 Filter parameter -- filters by gender.
+
 Example: http://starwarsapitest.herokuapp.com/api/get-characters/?height=165 -- returns all charcters in ascending order of their heights
 
 Sample Request
