@@ -12,8 +12,7 @@ Resources
 Movies
 This is a list of all Star Wars Movies
 
-Endpoint
-/list-all-movies/ --- returns all Star Wars in chronological order of their release dates
+Endpoint:     /list-all-movies/ --- returns all Star Wars in chronological order of their release dates
 
 Request Type: GET
 
@@ -26,11 +25,13 @@ Comments
 These are comments by anonymous people. The request must be made in JSON format
 
 Endpoints
+
 /add-comments/ --- Adds a new comment (POST request)
 /list-all-comments/ --- lists all comments in reverse chronological order (GET requets)
 
 Sample request
 http://starwarsapitest.herokuapp.com/api/list-all-comments
+
 
 
 Characters
@@ -39,9 +40,8 @@ These are the Characters (people) featured in the movies.
 
 Request Type: GET
 
-Endpoint
+Endpoint:   /get-characters/    -- returns the movie characters based on the supplied parameter
 
-/get-characters/
 This endpoint accepts two types of parameters:
 
 Sort parameter -- sorts by height. Returns all characters in ascending order of their geight.
