@@ -1,5 +1,3 @@
-Introduction
-
 This documentation is intended to help developers learn how to use the resources provided by this API. It shows you how to consume the resources using http requests. All requests are made or returned in JSON format. 
 Please read carefully.
 
@@ -15,6 +13,7 @@ This is a list of all Star Wars Movies
 
 Endpoint
 /list-all-movies/ --- returns all Star Wars in chronological order of their release dates
+
 Request Type: GET
 
 Sample request
@@ -33,6 +32,7 @@ http://starwarsapitest.herokuapp.com/api/list-all-comments
 
 Characters
 These are the Characters (people) featured in the movies.
+
 Request Type: GET
 
 Endpoint
